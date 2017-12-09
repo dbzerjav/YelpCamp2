@@ -20,8 +20,8 @@ var port = 3000 || process.env.PORT;
 var ip = '127.0.0.1' || process.env.IP;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/yelp_camp', {useMongoClient: true});
-
+// mongoose.connect('mongodb://localhost:27017/yelp_camp', {useMongoClient: true});
+mongoose.connect('mongodb://goob:719Hiddenlake@ds133746.mlab.com:33746/goobcamp2', {useMongoClient: true});
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
