@@ -16,8 +16,8 @@ var commentRoutes = require('./routes/comments');
 var campgroundRoutes = require('./routes/campgrounds');
 var indexRoutes = require('./routes/index');
 
-var port = 3000 || process.env.PORT;
-var ip = '127.0.0.1' || process.env.IP;
+var port = process.env.PORT;
+var ip = process.env.IP;
 
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DATABASEURL, {useMongoClient: true});
